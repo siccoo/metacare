@@ -1,0 +1,51 @@
+@import "../../App.css";
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid #ecebf5;
+  width: 262px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sidebar__profile {
+  background: #ffffff;
+  border: 1px solid #ecebf5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.sidebar__userName {
+  font-family: "Gelion-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #060213;
+  text-align: center;
+}
+
+.sidebar__userEmail {
+    font-family: "Gelion-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #696D8C;
+  text-align: center;
+}

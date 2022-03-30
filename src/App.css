@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ==========================================================================
+   01. GENERAL & BASIC STYLES
+   ========================================================================== */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+   @font-face {
+    font-family: 'Gelion-Regular';
+    src: url('../public/assets/fonts/gelion-cufonfonts-webfont/Gelion\ Regular.woff');
+      font-style: normal;
+      font-weight: normal;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @font-face {
+    font-family: 'Gelion-Medium';
+    src: url('../public/assets/fonts/gelion-cufonfonts-webfont/Gelion\ Medium.woff');
+      font-style: normal;
+      font-weight: normal;
   }
-  to {
-    transform: rotate(360deg);
+  
+  @font-face {
+    font-family: 'Gelion-Bold';
+    src: url('../public/assets/fonts/gelion-cufonfonts-webfont/Gelion\ SemiBold.woff');
+      font-style: normal;
+      font-weight: normal;
   }
-}
+  
+  /* // html {
+  //   position: relative;
+  //   min-height: 100%;
+  //   margin: 0 !important;
+  // } */
+  
+  body {
+    font-family: 'Gelion-Regular', 'Gelion-Medium', 'Gelion-Bold';
+    -webkit-font-smoothing: antialiased;
+    margin: 0 !important;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
