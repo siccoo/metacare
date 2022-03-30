@@ -9,7 +9,11 @@ const Sidebar = () => {
           <p className={styles.sidebar__userEmail}>adeyinka@metacare.app</p>
         </div>
 
-        <nav></nav>
+        <nav className={styles.sidebar__nav}>
+          <ul>
+            <li className={styles.sidebar__navItem}></li>
+          </ul>
+        </nav>
       </div>
     </aside>
   );
