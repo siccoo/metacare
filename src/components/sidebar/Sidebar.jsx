@@ -1,6 +1,10 @@
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Sidebar.module.css";
+
+const sidebarNavLinks = [
+    "Admin"
+]
+
 
 const Sidebar = () => {
   const location = useLocation();
@@ -15,7 +19,16 @@ const Sidebar = () => {
         <nav className={styles.sidebar__nav}>
           <ul>
             <li className={styles.sidebar__navItem}>
-              <Link>Admin</Link>
+              <img src="" alt="" />
+              <Link
+                className={
+                  location.pathname === "/admin"
+                    ? styles.sidebar__navlinkActive
+                    : styles.sidebar__navlink
+                }
+              >
+                Admin
+              </Link>
             </li>
           </ul>
         </nav>
