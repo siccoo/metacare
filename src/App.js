@@ -1,4 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
+import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="app">
       <Router>
         <Sidebar />
+        {/* <Topbar /> */}
       </Router>
     </div>
   );

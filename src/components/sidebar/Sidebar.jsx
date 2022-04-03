@@ -1,9 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Sidebar.module.css";
+import { SidebarData } from "./SidebarData";
 
-const sidebarNavLinks = [
-    "Admin"
-]
 
 
 const Sidebar = () => {
@@ -18,7 +16,8 @@ const Sidebar = () => {
 
         <nav className={styles.sidebar__nav}>
           <ul>
-            <li className={styles.sidebar__navItem}>
+              {SidebarData.map((sidebar__navlink) => (
+                <li className={styles.sidebar__navItem}>
               <img src="" alt="" />
               <Link
                 className={
@@ -26,12 +25,17 @@ const Sidebar = () => {
                     ? styles.sidebar__navlinkActive
                     : styles.sidebar__navlink
                 }
+                to={`/${sidebar__navlink}`}
               >
                 Admin
               </Link>
             </li>
+              ))}
           </ul>
         </nav>
+        <div>
+            
+        </div>
       </div>
     </aside>
   );
